@@ -6,9 +6,15 @@ import Login from "./pages/login/Login";
 import Register from "./pages/register/Register";
 import Profile from "./pages/profile/Profile";
 import Home from "./pages/home/Home";
-import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
+import {
+  Navigate,
+  Outlet,
+  RouterProvider,
+  createBrowserRouter,
+} from "react-router-dom";
 
 function App() {
+  const currentuser = true;
   const Layout = () => {
     return (
       <div>
@@ -21,10 +27,21 @@ function App() {
       </div>
     );
   };
+  const ProtectedRoute = ({ children }) => {
+    if (!currentuser) {
+      return <Navigate to={"/login"} />;
+    } else {
+      return children;
+    }
+  };
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <Layout />,
+      element: (
+        <ProtectedRoute>
+          <Layout />
+        </ProtectedRoute>
+      ),
       children: [
         { path: "/", element: <Home /> },
         { path: "/profile", element: <Profile /> },
