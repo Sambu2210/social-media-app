@@ -12,7 +12,7 @@ const Login = () => {
             industry.
           </p>
           <span>Don't have an account ?</span>
-          <Link to={"/register"}>
+          <Link to={"/rigester"}>
             <button>Rigister</button>
           </Link>
         </div>
