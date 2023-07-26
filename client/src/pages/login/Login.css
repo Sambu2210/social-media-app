@@ -28,10 +28,12 @@
   background-position: cover;
   background-size: cover;
   background-repeat: no-repeat;
+  border-radius: 10px 0px 0px 10px;
 }
 .left h1 {
   font-size: 70px;
-  line-height: 100px;
+  line-height: 80px;
+  margin-top: 0;
 }
 .left button {
   width: 50%;
@@ -48,10 +50,12 @@
   padding: 50px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  justify-content: center;
+  gap: 50px;
 }
 .right h1 {
   color: #555;
+  text-align: start;
 }
 .right form {
   display: flex;
@@ -67,5 +71,5 @@
   border: none;
   background-color: #938eef;
   padding: 10px;
-  width: 51%;
+  width: 50%;
 }

@@ -1,0 +1,75 @@
+.rigester {
+  height: 100vh;
+  background-color: rgb(193, 190, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  display: flex;
+  width: 50%;
+  border-radius: 10px;
+  min-height: 600px;
+  background-color: white;
+}
+.rigester-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 50px;
+  color: white;
+  background: -webkit-linear-gradient(
+      rgba(39, 11, 96, 0.5),
+      rgba(39, 11, 96, 0.5)
+    ),
+    url(https://images.pexels.com/photos/4881619/pexels-photo-4881619.jpeg?auto=compress&cs=tinysrgb&w=1600);
+
+  background-position: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 0px 10px 10px 0px;
+}
+.rigester-right h1 {
+  font-size: 70px;
+  line-height: 80px;
+  margin-top: 0;
+}
+.rigester-right button {
+  width: 50%;
+  border: none;
+  padding: 10px;
+  color: rebeccapurple;
+  background-color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.rigester-left {
+  flex: 1;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+}
+.rigester-left h1 {
+  color: #555;
+  text-align: start;
+}
+.rigester-left form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.rigester-left input {
+  border: none;
+  border-bottom: 1px solid lightgray;
+  padding: 20px 10px;
+}
+.rigester-left button {
+  border: none;
+  background-color: #938eef;
+  padding: 10px;
+  width: 50%;
+}
