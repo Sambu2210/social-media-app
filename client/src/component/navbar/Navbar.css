@@ -3,18 +3,25 @@
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid slategray;
-  padding: 20px 30px;
+  padding: 10px 20px;
+  height: 60px;
 }
 .nav-left {
   display: flex;
   align-items: center;
   gap: 30px;
 }
+.nav-left span {
+  font-size: 30px;
+  font-weight: bold;
+  color: darkblue;
+}
 .search {
   border: 1px solid lightgray;
   display: flex;
   align-items: center;
   padding: 10px;
+  border-radius: 5px;
 }
 .search input {
   border: none;
