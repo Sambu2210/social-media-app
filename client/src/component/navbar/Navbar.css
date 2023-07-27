@@ -4,7 +4,10 @@
   align-items: center;
   border-bottom: 1px solid slategray;
   padding: 10px 20px;
-  height: 60px;
+  height: 50px;
+  position: sticky;
+  top: 0;
+  background-color: white;
 }
 .nav-left {
   display: flex;
@@ -16,6 +19,7 @@
   font-weight: bold;
   color: darkblue;
 }
+
 .search {
   border: 1px solid lightgray;
   display: flex;
@@ -25,7 +29,7 @@
 }
 .search input {
   border: none;
-  width: 300px;
+  width: 200px;
 }
 .nav-right {
   display: flex;
@@ -39,4 +43,6 @@
 }
 .user img {
   border-radius: 50px;
+  width: 50px !important;
+  height: 50px !important;
 }
