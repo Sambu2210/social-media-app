@@ -13,9 +13,15 @@ import {
   RouterProvider,
   createBrowserRouter,
 } from "react-router-dom";
+import { useContext } from "react";
+import { DarkModeContext } from "./context/darkModeContext";
 
 function App() {
   const currentuser = true;
+
+  // const { darkmode } = useContext(DarkModeContext);
+  // console.log(darkmode);
+
   const Layout = () => {
     return (
       <div className="theme-dark">
