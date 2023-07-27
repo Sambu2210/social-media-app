@@ -1,7 +1,7 @@
 .leftbar {
   position: sticky;
   top: 70px;
-  height: 600px;
+  height: 70vh;
   overflow: scroll;
   width: 25%;
 }

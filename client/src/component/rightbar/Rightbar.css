@@ -1,3 +1,55 @@
 .rightbar {
-  width: 30%;
+  width: 100%;
+  position: sticky;
+  top: 70px;
+  height: 70vh;
+  overflow: scroll;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.rightbar-user img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+.rightbar .container {
+  padding: 20px;
+}
+.rightbar-items {
+  -webkit-box-shadow: -1px 1px 17px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 1px 17px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 1px 17px -6px rgba(0, 0, 0, 0.75);
+  padding: 20px;
+}
+.rightbar-user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.rightbar-userinfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.rightbar-buttons {
+  display: flex;
+  gap: 10px;
+}
+.rightbar-buttons button {
+  padding: 5px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.follow-btn {
+  background-color: #5271ff;
+}
+.dismiss-btn {
+  background-color: #f05447;
+}
+.rightbar-user span {
+  font-weight: 500;
+  color: black;
 }
