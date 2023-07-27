@@ -6,6 +6,7 @@ import Login from "./pages/login/Login";
 import Register from "./pages/register/Register";
 import Profile from "./pages/profile/Profile";
 import Home from "./pages/home/Home";
+import "./style.css";
 import {
   Navigate,
   Outlet,
@@ -17,7 +18,7 @@ function App() {
   const currentuser = true;
   const Layout = () => {
     return (
-      <div>
+      <div className="theme-dark">
         <Navbar />
         <div className="component">
           <LeftBar />

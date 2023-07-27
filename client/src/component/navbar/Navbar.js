@@ -7,6 +7,7 @@ import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import NotificationsOutlinedIcon from "@mui/icons-material/NotificationsOutlined";
 import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
 import { Link } from "react-router-dom";
+import "../../style.css";
 const Navbar = () => {
   return (
     <div className="navbar">

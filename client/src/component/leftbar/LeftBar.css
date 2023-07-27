@@ -1,9 +1,9 @@
 .leftbar {
   position: sticky;
-  top: 70px;
-  height: 70vh;
+  top: 74px;
+  height: 100vh;
   overflow: scroll;
-  width: 25%;
+  width: 40%;
 }
 ::-webkit-scrollbar {
   display: none;

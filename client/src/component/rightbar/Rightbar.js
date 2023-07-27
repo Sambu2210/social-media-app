@@ -47,7 +47,7 @@ const Rightbar = () => {
                 <span>Balaji</span> Changed the cover picture
               </p>
             </div>
-            <div>
+            <div className="time">
               <span>1 min ago</span>
             </div>
           </div>
@@ -61,7 +61,7 @@ const Rightbar = () => {
                 <span>Balaji</span> Changed the cover picture
               </p>
             </div>
-            <div>
+            <div className="time">
               <span>1 min ago</span>
             </div>
           </div>
@@ -75,8 +75,65 @@ const Rightbar = () => {
                 <span>Balaji</span> Changed the cover picture
               </p>
             </div>
-            <div>
+            <div className="time">
               <span>1 min ago</span>
+            </div>
+          </div>
+        </div>
+        <div className="rightbar-items">
+          <span>Online friends</span>
+          <div className="rightbar-user">
+            <div className="rightbar-userinfo">
+              <img
+                src="https://images.pexels.com/photos/3228727/pexels-photo-3228727.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                alt="person"
+              />
+              <div className="online" /> <span>Balaji</span>
+            </div>
+          </div>
+          <div className="rightbar-user">
+            <div className="rightbar-userinfo">
+              <img
+                src="https://images.pexels.com/photos/3228727/pexels-photo-3228727.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                alt="person"
+              />
+              <div className="online" /> <span>Balaji</span>
+            </div>
+          </div>
+          <div className="rightbar-user">
+            <div className="rightbar-userinfo">
+              <img
+                src="https://images.pexels.com/photos/3228727/pexels-photo-3228727.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                alt="person"
+              />
+              <div className="online" /> <span>Balaji</span>
+            </div>
+          </div>
+          <div className="rightbar-user">
+            <div className="rightbar-userinfo">
+              <img
+                src="https://images.pexels.com/photos/3228727/pexels-photo-3228727.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                alt="person"
+              />
+              <div className="online" /> <span>Balaji</span>
+            </div>
+          </div>
+          <div className="rightbar-user">
+            <div className="rightbar-userinfo">
+              <img
+                src="https://images.pexels.com/photos/3228727/pexels-photo-3228727.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                alt="person"
+              />
+              <div className="online" /> <span>Balaji</span>
+            </div>
+          </div>
+          <div className="rightbar-user">
+            <div className="rightbar-userinfo">
+              <img
+                src="https://images.pexels.com/photos/3228727/pexels-photo-3228727.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                alt="person"
+              />
+              <div className="online" /> <span>Balaji</span>
             </div>
           </div>
         </div>

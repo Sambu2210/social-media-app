@@ -1,0 +1,44 @@
+/* $theme: (
+  light: {text-color: black; bg: white; logo: darkblue; bgSoft: #f6f3f3; textColorSoft:
+    #555; border: lightgray},
+  dark: {text-color: whitesmoke; bg: #222; logo: white; bgSoft: #333; textColorSoft:
+    lightgray; border: #444},
+); */
+/* CSS for "light" theme */
+.theme-dark .navbar {
+  background-color: #222;
+  color: white;
+  border: 1px solid lightgray;
+}
+.theme-dark .navbar .search input {
+  background-color: #222;
+  color: white;
+  border: none;
+}
+.theme-dark .navbar .nav-left span {
+  color: white;
+}
+
+/* left bar style */
+
+.theme-dark .leftbar {
+  background-color: #222;
+  color: white;
+}
+
+/* right bar style */
+.theme-dark .rightbar {
+  background-color: #333;
+  color: white;
+}
+.theme-dark .rightbar-user span {
+  color: white;
+}
+.theme-dark .rightbar-items {
+  background-color: #222;
+}
+
+/* home page  */
+.theme-dark .home {
+  background-color: #333;
+}

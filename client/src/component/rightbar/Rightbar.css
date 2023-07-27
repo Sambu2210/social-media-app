@@ -1,8 +1,8 @@
 .rightbar {
-  width: 100%;
+  width: 70%;
   position: sticky;
-  top: 70px;
-  height: 70vh;
+  top: 74px;
+  height: 100vh;
   overflow: scroll;
 }
 ::-webkit-scrollbar {
@@ -13,6 +13,9 @@
   height: 50px;
   border-radius: 50px;
 }
+.rightbar-userinfo p {
+  color: gray;
+}
 .rightbar .container {
   padding: 20px;
 }
@@ -21,12 +24,14 @@
   -moz-box-shadow: -1px 1px 17px -6px rgba(0, 0, 0, 0.75);
   box-shadow: -1px 1px 17px -6px rgba(0, 0, 0, 0.75);
   padding: 20px;
+  margin-bottom: 20px;
 }
 .rightbar-user {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 20px 0;
+  position: relative;
 }
 .rightbar-userinfo {
   display: flex;
@@ -52,4 +57,13 @@
 .rightbar-user span {
   font-weight: 500;
   color: black;
+}
+.online {
+  width: 12px;
+  height: 12px;
+  border-radius: 50px;
+  background-color: limegreen;
+  position: absolute;
+  top: 0;
+  left: 41px;
 }
