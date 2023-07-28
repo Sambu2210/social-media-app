@@ -6,6 +6,7 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import InsertCommentIcon from "@mui/icons-material/InsertComment";
 import ShareIcon from "@mui/icons-material/Share";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
+import Comments from "../comments/Comments";
 const Post = ({ post }) => {
   const liked = false;
   return (
@@ -40,6 +41,7 @@ const Post = ({ post }) => {
             share
           </div>
         </div>
+        <Comments />
       </div>
     </div>
   );
