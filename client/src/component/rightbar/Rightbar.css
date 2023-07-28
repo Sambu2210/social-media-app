@@ -1,5 +1,5 @@
 .rightbar {
-  width: 70%;
+  flex: 2;
   position: sticky;
   top: 74px;
   height: 100vh;

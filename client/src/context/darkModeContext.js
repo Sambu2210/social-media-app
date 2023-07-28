@@ -4,7 +4,7 @@ export const DarkModeContext = createContext();
 
 export const DarkmodeContextProvider = ({ children }) => {
   const [darkmode, setDarkmode] = useState(
-    localStorage.getItem("darkmode") || false
+    JSON.parse(localStorage.getItem("darkmode")) || false
   );
 
   const toggle = () => {

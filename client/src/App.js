@@ -15,16 +15,16 @@ import {
 } from "react-router-dom";
 import { useContext } from "react";
 import { DarkModeContext } from "./context/darkModeContext";
+import { AuthContext } from "./context/authContext";
 
 function App() {
-  const currentuser = true;
+  const { currentUser } = useContext(AuthContext);
 
   const { darkmode } = useContext(DarkModeContext);
-  console.log(darkmode);
 
   const Layout = () => {
     return (
-      <div className="theme-dark">
+      <div className={`theme-${darkmode ? "dark" : ""}`}>
         <Navbar />
         <div className="component">
           <LeftBar />
@@ -35,7 +35,7 @@ function App() {
     );
   };
   const ProtectedRoute = ({ children }) => {
-    if (!currentuser) {
+    if (!currentUser) {
       return <Navigate to={"/login"} />;
     } else {
       return children;

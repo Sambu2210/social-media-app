@@ -3,7 +3,7 @@
   top: 74px;
   height: 100vh;
   overflow: scroll;
-  width: 40%;
+  flex: 1;
 }
 ::-webkit-scrollbar {
   display: none;
