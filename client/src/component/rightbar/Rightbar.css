@@ -2,8 +2,9 @@
   flex: 2;
   position: sticky;
   top: 74px;
-  height: 100vh;
+  height: 90vh;
   overflow: scroll;
+  background-color: #f5f3f3;
 }
 ::-webkit-scrollbar {
   display: none;

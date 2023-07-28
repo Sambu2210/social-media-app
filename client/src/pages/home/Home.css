@@ -2,7 +2,10 @@
   flex: 3;
   position: sticky;
   top: 74px;
-  height: 100vh;
+  height: 90vh;
   overflow: scroll;
+}
+.home-container {
   padding: 20px 70px;
+  background-color: #f5f3f3;
 }

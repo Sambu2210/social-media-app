@@ -16,11 +16,12 @@ import { AuthContext } from "../../context/authContext";
 import { useContext } from "react";
 const LeftBar = () => {
   const { currentUser } = useContext(AuthContext);
+  console.log("left", currentUser);
   return (
     <div className="leftbar">
       <div className="container">
         <div className="menu">
-          <div className="items">
+          <div className="items" key={currentUser.id}>
             <img src={currentUser.profilePic} alt="person" />
             <span>{currentUser.name}</span>
           </div>
