@@ -21,13 +21,15 @@
 
 /* left bar style */
 
-.theme-dark .leftbar {
+.theme-dark .leftbar,
+.theme-dark .post-container {
   background-color: #222;
   color: white;
 }
 
 /* right bar style */
-.theme-dark .rightbar {
+.theme-dark .rightbar,
+.theme-dark .home-container {
   background-color: #333;
   color: white;
 }
@@ -39,6 +41,5 @@
 }
 
 /* home page  */
-.theme-dark .home {
-  background-color: #333;
-}
+
+/* post page */
