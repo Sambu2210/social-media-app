@@ -19,8 +19,8 @@ import { DarkModeContext } from "./context/darkModeContext";
 function App() {
   const currentuser = true;
 
-  // const { darkmode } = useContext(DarkModeContext);
-  // console.log(darkmode);
+  const { darkmode } = useContext(DarkModeContext);
+  console.log(darkmode);
 
   const Layout = () => {
     return (
