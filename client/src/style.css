@@ -24,14 +24,16 @@
 .theme-dark .leftbar,
 .theme-dark .post-container,
 .theme-dark .post-container .comments .write input,
-.theme-dark .post-container .detials a .name {
+.theme-dark .post-container .detials a .name,
+.theme-dark .porfile-container .uinfo {
   background-color: #222;
   color: white;
 }
 
 /* right bar style */
 .theme-dark .rightbar,
-.theme-dark .home-container {
+.theme-dark .home-container,
+.theme-dark .porfile {
   background-color: #333;
   color: white;
 }

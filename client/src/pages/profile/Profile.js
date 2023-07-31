@@ -7,7 +7,9 @@ import PlaceIcon from "@mui/icons-material/Place";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import LanguageIcon from "@mui/icons-material/Language";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
+
 import "./Profile.css";
+import Posts from "../../component/posts/Posts";
 const Profile = () => {
   return (
     <div className="profile">
@@ -29,7 +31,7 @@ const Profile = () => {
             <FacebookIcon fontSize="large" />
             <InstagramIcon fontSize="large" />
             <LinkedInIcon fontSize="large" />
-            <TwitterIcon fontSize="large" />
+            {/* <TwitterIcon fontSize="large" /> */}
             <PinterestIcon fontSize="large" />
           </div>
           <div className="center">
@@ -43,14 +45,15 @@ const Profile = () => {
                 <LanguageIcon />
                 <span>lamp.dev</span>
               </div>
-              <button>follow</button>
             </div>
+            <button>follow</button>
           </div>
           <div className="right">
             <MailOutlineIcon />
             <MoreVertIcon />
           </div>
         </div>
+        <Posts />
       </div>
     </div>
   );
