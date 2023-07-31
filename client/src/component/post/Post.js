@@ -7,8 +7,10 @@ import InsertCommentIcon from "@mui/icons-material/InsertComment";
 import ShareIcon from "@mui/icons-material/Share";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import Comments from "../comments/Comments";
+import { useState } from "react";
 const Post = ({ post }) => {
   const liked = false;
+  const [commentOpen, setCommentOpen] = useState(false);
   return (
     <div className="post">
       <div className="post-container">
@@ -16,8 +18,10 @@ const Post = ({ post }) => {
           <div className="userinfo">
             <img src={post.profilePic} alt="" />
             <div className="detials">
-              <Link to={`/porfile/${post.userID}`}></Link>
-              <span className="name">{post.name}</span>
+              {/* to={`/porfile/${post.userID}`} */}
+              <Link to={"/profile"}>
+                <span className="name">{post.name}</span>
+              </Link>
               <span className="date">1 min ago</span>
             </div>
           </div>
@@ -32,7 +36,10 @@ const Post = ({ post }) => {
             {liked ? <FavoriteIcon /> : <FavoriteBorderIcon />}
             12 likes
           </div>
-          <div className="info-items">
+          <div
+            className="info-items"
+            onClick={() => setCommentOpen(!commentOpen)}
+          >
             <InsertCommentIcon />
             12 comments
           </div>
@@ -41,7 +48,7 @@ const Post = ({ post }) => {
             share
           </div>
         </div>
-        <Comments />
+        {commentOpen && <Comments />}
       </div>
     </div>
   );

@@ -1,3 +1,45 @@
 .comments .user img {
   object-fit: cover;
 }
+.write {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.write input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border: 1px solid lightgray;
+}
+.write button {
+  border: none;
+  border-radius: 3px;
+  background-color: #5271ff;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+.write img {
+  border-radius: 50px;
+  width: 50px !important;
+  height: 50px !important;
+}
+.cmd-person-detail p {
+  margin-top: 0;
+}
+.cmd-person-detail span {
+  font-weight: 500;
+}
+.cmd-person-detail {
+  display: flex;
+  flex: 5;
+  flex-direction: column;
+  gap: 3px;
+}
+.comment-date {
+  flex: 1;
+  color: gray;
+  font-size: small;
+}

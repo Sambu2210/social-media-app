@@ -1,9 +1,12 @@
+import { useContext } from "react";
 import "./Comments.css";
+import { AuthContext } from "../../context/authContext";
 const Comments = () => {
+  const { currentUser } = useContext(AuthContext);
   const comment = [
     {
       id: 1,
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
       name: "bala",
       userId: 1,
       profilePicture:
@@ -20,6 +23,11 @@ const Comments = () => {
   ];
   return (
     <div className="comments">
+      <div className="write">
+        <img src={currentUser.profilePic} />
+        <input type="text" placeholder="Write a Comment" />
+        <button>Sent</button>
+      </div>
       {comment.map((cmd) => (
         <div className="user">
           <img src={cmd.profilePicture} alt="person" />
@@ -27,7 +35,7 @@ const Comments = () => {
             <span>{cmd.name}</span>
             <p>{cmd.desc}</p>
           </div>
-          <div className="date">1 hour ago</div>
+          <div className="comment-date">1 hour ago</div>
         </div>
       ))}
     </div>

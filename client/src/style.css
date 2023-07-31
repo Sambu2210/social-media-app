@@ -22,7 +22,9 @@
 /* left bar style */
 
 .theme-dark .leftbar,
-.theme-dark .post-container {
+.theme-dark .post-container,
+.theme-dark .post-container .comments .write input,
+.theme-dark .post-container .detials a .name {
   background-color: #222;
   color: white;
 }
@@ -39,7 +41,3 @@
 .theme-dark .rightbar-items {
   background-color: #222;
 }
-
-/* home page  */
-
-/* post page */
